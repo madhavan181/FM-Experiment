@@ -65,13 +65,41 @@ MODEL GRAPH:
 
 
 Program
+```
+Am = 11.1;
+Fm = 500;
+B  = 6.3;
+Ac = 22.2;
+Fc = 5000;
+Fs = 99000;
+T  = 0:1/Fs:2/Fm;
 
+em = Am * cos(2*%pi*Fm*T);
+subplot(3,1,1);
+plot(T, em);
+xtitle("Message Signal");
+xgrid();
+
+ec = Ac * cos(2*%pi*Fc*T);
+subplot(3,1,2);
+plot(T, ec);
+xtitle("Carrier Signal");
+xgrid();
+
+efm = Ac * cos( (2*%pi*Fc*T) + (B * sin(2*%pi*Fm*T)) );
+subplot(3,1,3);
+plot(T, efm);
+xtitle("FM Signal");
+xgrid();
+```
 
 Output Waveform
 
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/1dfbabe7-eb59-4de5-b606-aff5b3e2a6c5" />
 
 
 Tabulation
+<img width="843" height="891" alt="image" src="https://github.com/user-attachments/assets/93713c40-8406-4a81-a1b2-82a8d94b7504" />
 
 
 
