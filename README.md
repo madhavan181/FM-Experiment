@@ -102,18 +102,6 @@ Tabulation
 
 <img width="843" height="891" alt="image" src="https://github.com/user-attachments/assets/93713c40-8406-4a81-a1b2-82a8d94b7504" />
 
-Calculation
-
-
-
-Frequency Deviation Practical = 
-
-Modulation Index Practical	= 
-
-Modulation Index Theoretical	=
-
-
-
 RESULT:
 
 Thus, the frequency modulation and demodulation is successfully done and the output is experimentally verified.
